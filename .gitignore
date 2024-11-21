@@ -1,0 +1,81 @@
+init_franco.bat
+
+# Ignorar archivos temporales de Office
+~$*
+~*.tmp
+
+# Entorno virtual
+venv/
+myenv/
+env/
+.venv/
+.venv.bak/
+
+# Archivos de configuración de entorno
+*.env
+*.local
+*.secret
+
+# Archivos de bases de datos locales
+*.sqlite3
+Neropage/db.sqlite3
+
+# Archivos de caché
+__pycache__/
+NeroPage/__pycache__/
+*.py[cod]
+*.pyc
+**/migrations/__pycache__/
+
+# Opcional, si nginx.conf es local
+Neropage/Neropage/nginx.conf
+
+# Archivos creados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos creados por editores y entornos de desarrollo
+.vscode/
+.idea/
+*.swp
+
+# Archivos de logs
+*.log
+*.pot
+
+# Archivos estáticos y media
+NeroPage/staticfiles/
+Neropage/staticfiles/*
+media/
+
+# Archivos de migración ()
+*/migrations/*.pyc
+*/migrations/*.pyo
+*/migrations/*.pyd
+*/migrations/*.pdb
+*/migrations/__pycache__/
+*/migrations/[0-9]*.py
+
+# Archivos de cobertura
+htmlcov/
+.coverage
+.coverage.*
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Archivos de pruebas y fixtures
+*.cover
+*.coverage
+*.coverage.*
+
+# Documentación
+*.rst
+
+# Otros archivos y directorios específicos del proyecto (node modules?)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
